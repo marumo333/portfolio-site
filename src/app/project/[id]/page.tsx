@@ -20,8 +20,12 @@ export default async function ProjectPage({ params }: PageProps) {
 
   try {
     readmeContent = await getReadmeContent(project.githubUrl);
-  } catch (e: any) {
-    error = e?.message ?? '不明なエラーが発生しました';
+  } catch (e: unknown) {
+    if (e instanceof Error) {
+      error = e.message;
+    } else {
+      error = '不明なエラーが発生しました';
+    }
   }
 
   return (

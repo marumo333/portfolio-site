@@ -121,23 +121,21 @@ export default function ProjectDetail({ project, readmeContent, error }: Project
               <ReactMarkdown 
                 remarkPlugins={[remarkGfm]}
                 components={{
-                  // コードブロックのスタイリング（型は緩めて互換性確保）
-                  code: ({ inline, className, children, ...props }: any) => {
+                  code({ inline, className, children, ...props }: { inline?: boolean; className?: string; children?: React.ReactNode } & React.HTMLAttributes<HTMLElement>) {
                     const isInline = inline;
                     return (
                       <code
-                        className={`${className} ${
+                        className={`${className ?? ''} ${
                           isInline
                             ? 'bg-gray-100 text-gray-800 px-1 py-0.5 rounded text-sm' 
                             : 'block bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto'
                         }`}
                         {...props}
                       >
-                        {children}
+                        {children as React.ReactNode}
                       </code>
                     );
                   },
-                  // リンクのスタイリング
                   a({ href, children, ...props }) {
                     return (
                       <a
