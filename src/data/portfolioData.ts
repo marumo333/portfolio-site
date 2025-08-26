@@ -17,7 +17,26 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/marumo333/fast-map",
     externalUrl: "https://fast-map-five.vercel.app/",
     tags: ["React", "TypeScript", "Next.js", "Google Maps API", "Tailwind CSS", "shadcn/ui"],
-    featured: true
+    featured: false
+  },
+  {
+    id: "runners-free",
+    title: "Runners Free - フリーランス向けECプラットフォーム",
+    description: "フリーランサーが自らの商品やサービスを販売し、購入者との取引を行うマーケットプレイス。レビュー・購入履歴・Stripe決済・Supabase Auth対応。",
+    githubUrl: "https://github.com/marumo333/runners-free",
+    externalUrl: "https://runners-free.vercel.app",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Mantine UI",
+      "Supabase",
+      "PostgreSQL",
+      "Prisma",
+      "Stripe",
+      "DeepL API"
+    ],
+    featured: false
   },
   {
     id: "seller",
@@ -35,7 +54,7 @@ export const portfolioData: PortfolioItem[] = [
     githubUrl: "https://github.com/marumo333/customer",
     externalUrl: "https://customer-gamma-one.vercel.app/",
     tags: ["Next.js", "React", "TypeScript", "Supabase", "Stripe", "DeepL API"],
-    featured: false
+    featured: true
   },
   {
     id: "choiben-assist",
