@@ -16,7 +16,7 @@ export const portfolioData: PortfolioItem[] = [
     description: "Google Maps Platformを活用した高速なルート検索アプリケーション。地図表示、最適なルート検索、現在地の自動取得、リアルタイム通知機能を備えた個人開発プロジェクト。",
     githubUrl: "https://github.com/marumo333/fast-map",
     externalUrl: "https://fast-map-five.vercel.app/",
-    tags: ["React", "TypeScript", "Next.js", "Google Maps API", "Tailwind CSS", "shadcn/ui"],
+    tags: ["React", "TypeScript", "Next.js", "Google Maps API", "Tailwind CSS", "shadcn/ui", "個人開発"],
     featured: false
   },
   {
@@ -34,7 +34,8 @@ export const portfolioData: PortfolioItem[] = [
       "PostgreSQL",
       "Prisma",
       "Stripe",
-      "DeepL API"
+      "DeepL API",
+      "個人開発"
     ],
     featured: false
   },
@@ -44,7 +45,7 @@ export const portfolioData: PortfolioItem[] = [
     description: "雑貨屋など多様な商品を取り扱う店舗向けのWebアプリケーション。商品管理、QRコード生成、DeepL APIによる翻訳、購入機能を備えたフルスタック開発プロジェクト。",
     githubUrl: "https://github.com/marumo333/seller",
     externalUrl: "https://seller-weld.vercel.app/",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Prisma", "Stripe", "DeepL API"],
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Prisma", "Stripe", "DeepL API", "個人開発"],
     featured: true
   },
   {
@@ -53,7 +54,7 @@ export const portfolioData: PortfolioItem[] = [
     description: "QRコードを通じて顧客がスマートフォンから直接商品詳細を確認し、オンラインで閲覧・購入できるシンプルなUI設計のWebアプリケーション。",
     githubUrl: "https://github.com/marumo333/customer",
     externalUrl: "https://customer-gamma-one.vercel.app/",
-    tags: ["Next.js", "React", "TypeScript", "Supabase", "Stripe", "DeepL API"],
+    tags: ["Next.js", "React", "TypeScript", "Supabase", "Stripe", "DeepL API", "個人開発"],
     featured: true
   },
   {
@@ -62,7 +63,24 @@ export const portfolioData: PortfolioItem[] = [
     description: "勉強の習慣化に悩むユーザー向けの学習管理ツール。AIによる勉強計画提案と直感的な記録システムで、継続的な学習をサポートするハッカソンプロジェクト。",
     githubUrl: "https://github.com/develoop-official/ChoibenAssist-Front",
     externalUrl: "https://choiben-assist-front.vercel.app/",
-    tags: ["Next.js", "React", "TypeScript", "Panda CSS", "FastAPI", "Python", "Supabase", "Gemini API"],
+    tags: ["Next.js", "React", "TypeScript", "Panda CSS", "FastAPI", "Python", "Supabase", "Gemini API", "チーム開発"],
+    featured: false
+  },
+  {
+    id: "fish-spot",
+    title: "fish-spot",
+    description: "地図上で地点を選択すると現在の風速・風向を表示するWebアプリ。釣りに最適なスポット探索のために、Open-Meteoの気象データをReact Leafletの地図上で直感的に確認可能。",
+    githubUrl: "https://github.com/marumo333/fish-spot",
+    externalUrl: "https://fish-spot-inky.vercel.app/",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Leaflet",
+      "Open-Meteo API",
+      "個人開発"
+    ],
     featured: false
   }
 ];
