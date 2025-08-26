@@ -22,7 +22,12 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 日本語優先のフォントスタックに変更（字間のばらつきを抑制） */
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "Yu Gothic UI", "Yu Gothic", Meiryo,
+    Arial, Helvetica, sans-serif;
+  letter-spacing: 0;
 }
 
 /* カスタムスタイル */
@@ -31,4 +36,11 @@ body {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* 見出しの東アジア組版（プロポーショナルメトリクス）を抑制 */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0;
+  font-kerning: normal;
+  font-feature-settings: 'palt' 0, 'kern' 1;
 }
