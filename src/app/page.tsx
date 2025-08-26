@@ -15,14 +15,6 @@ export default function Home() {
               自作アプリや開発物をまとめたポートフォリオサイトです。<br />
               各作品の詳細はGitHubのREADMEから自動取得しています。
             </p>
-            <div className="mt-6 flex justify-center">
-              <a
-                href="/profile"
-                className="inline-flex items-center justify-center px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-800 transition-colors duration-200"
-              >
-                プロフィールを見る
-              </a>
-            </div>
           </div>
         </div>
       </header>
