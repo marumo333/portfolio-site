@@ -7,14 +7,33 @@ export default function Home() {
       {/* ヘッダー */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-900 mb-4">
-              ポートフォリオ
-            </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              自作アプリや開発物をまとめたポートフォリオサイトです。<br />
-              各作品の詳細はGitHubのREADMEから自動取得しています。
-            </p>
+          <div className="flex items-start justify-between">
+            <div className="text-left w-full">
+              <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+                ポートフォリオ
+              </h1>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto text-center">
+                自作アプリや開発物をまとめたポートフォリオサイトです。<br />
+                各作品の詳細はGitHubのREADMEから自動取得しています。
+              </p>
+              {/* モバイルでも表示するプロフィールボタン */}
+              <div className="mt-4 flex justify-center sm:hidden">
+                <a
+                  href="/profile"
+                  className="inline-flex items-center px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-800 transition-colors duration-200"
+                >
+              My skills
+                </a>
+              </div>
+            </div>
+            <div className="hidden sm:block">
+              <a
+                href="/profile"
+                className="inline-flex items-center px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-md hover:bg-gray-800 transition-colors duration-200"
+              >
+            My Skills
+              </a>
+            </div>
           </div>
         </div>
       </header>
