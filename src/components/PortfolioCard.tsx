@@ -8,6 +8,12 @@ interface PortfolioCardProps {
 }
 
 export default function PortfolioCard({ item }: PortfolioCardProps) {
+  const devType = item.tags.includes('チーム開発')
+    ? 'チーム開発'
+    : item.tags.includes('個人開発')
+    ? '個人開発'
+    : null;
+
   return (
     <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden">
       <div className="p-6">
@@ -15,11 +21,18 @@ export default function PortfolioCard({ item }: PortfolioCardProps) {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">
             {item.title}
           </h3>
-          {item.featured && (
-            <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
-              注目
-            </span>
-          )}
+          <div className="flex items-center gap-2">
+            {devType && (
+              <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                {devType}
+              </span>
+            )}
+            {item.featured && (
+              <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
+                注目
+              </span>
+            )}
+          </div>
         </div>
         
         <p className="text-gray-600 mb-4 line-clamp-3">
