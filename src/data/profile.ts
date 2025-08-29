@@ -58,6 +58,12 @@ export const internships: Internship[] = [
     duration: '1日',
     summary: '企業説明後、カレンダーアプリのフロント/バックエンド機能改善を実施。',
   },
+  {
+    id: 'kubell',
+    company: '株式会社kubell',
+    duration: '1ヶ月以内',
+    summary: '2週間でモデルユーザーのヒアリングやプロダクト開発を通して、チャットアプリ・PRDの作成を交え、開発の上流工程から実装まで幅広くプロダクト志向やユーザー目線でのプロダクト開発の経験を得られました。',
+  },
 ];
 
 
