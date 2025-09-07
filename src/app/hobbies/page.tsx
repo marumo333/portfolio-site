@@ -1,4 +1,5 @@
 import { hobbies } from '@/data/profile';
+import Link from 'next/link';
 
 export default function Hobbies() {
   return (
@@ -111,18 +112,18 @@ export default function Hobbies() {
             同じ趣味を持つ方や、新しいプロジェクトに興味のある方とお話しできたら嬉しいです
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/profile"
               className="inline-flex items-center px-8 py-3 bg-purple-600 text-white text-lg font-medium rounded-lg hover:bg-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               プロフィールを見る
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="inline-flex items-center px-8 py-3 bg-transparent text-purple-600 text-lg font-medium rounded-lg hover:bg-purple-50 transition-all duration-200 border-2 border-purple-600"
             >
               プロジェクトを見る
-            </a>
+            </Link>
           </div>
         </div>
       </section>

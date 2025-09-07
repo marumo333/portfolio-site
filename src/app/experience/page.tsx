@@ -1,4 +1,5 @@
 import { experiences, education } from '@/data/profile';
+import Link from 'next/link';
 
 export default function Experience() {
   return (
@@ -115,18 +116,18 @@ export default function Experience() {
             スキルやプロジェクトについてもご覧ください
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/profile"
               className="inline-flex items-center px-8 py-3 bg-white text-blue-600 text-lg font-medium rounded-lg hover:bg-gray-50 transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               スキルを見る
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
               className="inline-flex items-center px-8 py-3 bg-transparent text-white text-lg font-medium rounded-lg hover:bg-white/10 transition-all duration-200 border-2 border-white"
             >
               プロジェクトを見る
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { skills, links, internships } from '@/data/profile';
 import SkillCard from '@/components/SkillCard';
 import InternshipItem from '@/components/InternshipItem';
