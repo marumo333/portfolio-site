@@ -18,6 +18,30 @@ export interface Internship {
   summary: string;
 }
 
+export interface Experience {
+  id: string;
+  category: string;
+  title: string;
+  content: string;
+}
+
+export interface Education {
+  id: string;
+  schoolType: string;
+  schoolName: string;
+  department: string;
+  program: string;
+  graduationYear: string;
+}
+
+export interface Hobby {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  details: string[];
+}
+
 export const skills: Skill[] = [
   { id: 'cpp', name: 'C++', usage: ['趣味'], summary: 'ETロボコンなどの組み込み開発で使用。' },
   { id: 'php', name: 'PHP', usage: ['趣味'], summary: '個人開発等で使用。' },
@@ -62,8 +86,84 @@ export const internships: Internship[] = [
     id: 'kubell',
     company: '株式会社kubell',
     duration: '1ヶ月以内',
-    summary: '2週間でモデルユーザーのヒアリングやプロダクト開発を通して、チャットアプリ・PRDの作成を交え、開発の上流工程から実装まで幅広くプロダクト志向やユーザー目線でのプロダクト開発の経験を得られました。',
+    summary: '2週間でモデルユーザーのヒアリングやプロダクト開発を通して、チャットアプリ・PRDの作成を交え、開発の上流工程から実装まで幅広くプロダクト志向やユーザー目線でのプロダクト開発の経験を得られました。また、スクラムマスターとしてチームを率いる経験を得られました',
   },
+  {
+    id: 'kddi-agile',
+    company: 'KDDIアジャイル開発センター株式会社',
+    duration: '1週間以内',
+    summary: '5日間でモデルユーザーに対してのプロダクト開発を1週間で行うチーム開発を経験。チームリーダーとして、チーム開発を牽引。',
+  }
+];
+
+export const education: Education[] = [
+  {
+    id: 'university',
+    schoolType: '大学',
+    schoolName: '琉球大学',
+    department: '人文社会学部国際法政学科',
+    program: '法学プログラム',
+    graduationYear: '2027年卒業見込み'
+  }
+];
+
+export const experiences: Experience[] = [
+  {
+    id: 'clubs',
+    category: '所属している部活・サークル',
+    title: '琉球大学柔道部・ロボコンサークル・Dveloop',
+    content: '琉球大学柔道部では礼節と精神力を学び、ロボコンサークルではETロボコンなどの競技に参加し技術力を向上させています。Dveloopではチーム開発を通じて実践的なプログラミングスキルを身につけ、最新の技術動向を学んでいます。'
+  },
+  {
+    id: 'hobbies',
+    category: '趣味',
+    title: '読書・ギター・音楽を聴くこと・ネトフリ・ドライブ',
+    content: 'プライベートは私生活アウトドアとインドア半々で過ごしてます。'
+  }
+];
+
+export const hobbies: Hobby[] = [
+  {
+    id: 'programming',
+    title: '読書',
+    description: 'プログラミング学習のための技術書や歴史や情勢が好きなため、歴史書や経済誌を見てます。',
+    icon: '📚',
+    details: [
+      'Webアプリケーション開発（React, Next.js, Vue.js）に関する書籍',
+      '歴史や情勢に関する書籍'
+    ]
+  },
+  {
+    id: 'guitar',
+    title: 'ギター',
+    description: 'ギターを弾きながら、音楽を聴くことが好きです',
+    icon: '🎸',
+    details: [
+      'アコースティックギターを弾いてます'
+    ]
+  },
+  {
+    id: 'watch-video',
+    title: 'ネトフリ',
+    description: '色々な作品を日々見てます。',
+    icon: '🎥',
+    details: [
+      '好きなジャンル：',
+      'ホラーサスペンス系',
+      'アクションサスペンス系',
+      'ファンタジー系',
+      'ドラマ系',
+      'ミステリー系',
+    ]
+  },{
+    id: 'drive',
+    title: 'ドライブ',
+    description: '車を運転しながら、景色を眺めることが好きです。',
+    icon: '🚗',
+    details: [
+      '車で色々な景色の綺麗な場所を見ながら、ドライブをすることが好きです。'
+    ]
+  }
 ];
 
 
