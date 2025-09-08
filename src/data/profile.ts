@@ -93,6 +93,12 @@ export const internships: Internship[] = [
     company: 'KDDIアジャイル開発センター株式会社',
     duration: '1週間以内',
     summary: '5日間でモデルユーザーに対してのプロダクト開発を1週間で行うチーム開発を経験。チームリーダーとして、チーム開発を牽引。',
+  },
+  {
+    id: 'relic',
+    company: '株式会社Relic',
+    duration: '1日',
+    summary: '1日でアイデアソンから発表まで行いました。',
   }
 ];
 

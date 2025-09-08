@@ -53,7 +53,7 @@ export default function ProfilePage() {
         {/* Internships */}
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            インターン・開発アルバイト経験
+            インターン・開発アルバイト経験 {internships.length}
           </h2>
           <div className="space-y-6">
             {internships.map((i) => (
