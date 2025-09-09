@@ -51,6 +51,7 @@ export const skills: Skill[] = [
   { id: 'python', name: 'Python', usage: ['学校の授業'], summary: '大学の講義におけるデータ解析等で使用。' },
   { id: 'javascript', name: 'JavaScript', usage: ['趣味'], summary: '個人開発で使用（Vue.js, Node.js, Next.js, Reactなど）。' },
   { id: 'typescript', name: 'TypeScript', usage: ['趣味'], summary: '個人開発において使用。' },
+  { id: 'go', name: 'Go', usage: ['インターン'], summary: 'バックエンド開発のインターンで使用。' },
   { id: 'rdbms', name: 'RDBMS (PostgreSQL, MySQL, etc)', usage: ['趣味'], summary: 'Supabaseなどの個人開発で使用。' },
   { id: 'ruby', name: 'Ruby', usage: ['インターン', '趣味'], summary: 'Ruby on Railsを個人開発およびインターンで使用。' },
   { id: 'vcs', name: 'ソースコード管理', usage: ['学校の授業', 'インターン', '趣味'], summary: 'Git等のVCSと連携し、GitHubで個人/チーム開発に使用。' },
@@ -99,6 +100,12 @@ export const internships: Internship[] = [
     company: '株式会社Relic',
     duration: '1日',
     summary: '1日でアイデアソンから発表まで行いました。',
+  },
+  {
+    id: 'buysell-technologies',
+    company: '株式会社BuySell Technologies',
+    duration: '1日',
+    summary: 'バックエンドをGo、フロントエンドをTypeScriptを用いてチーム開発を経験。',
   }
 ];
 
