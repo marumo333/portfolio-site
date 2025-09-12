@@ -106,6 +106,12 @@ export const internships: Internship[] = [
     company: '株式会社BuySell Technologies',
     duration: '1日',
     summary: 'バックエンドをGo、フロントエンドをTypeScriptを用いてチーム開発を経験。',
+  },
+  {
+    id: 'rizap-technologies',
+    company: 'RIZAP テクノロジーズ株式会社',
+    duration: '1週間以内',
+    summary: 'Ruby on Railsを用いてAPI設計から実装までを三日間で担当。API設計やMVCアーキテクチャ設計などの設計書を作成し、チームリーダーとしてAPI実装を行った。',
   }
 ];
 
