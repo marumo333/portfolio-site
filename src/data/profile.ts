@@ -112,6 +112,12 @@ export const internships: Internship[] = [
     company: 'RIZAP テクノロジーズ株式会社',
     duration: '1週間以内',
     summary: 'Ruby on Railsを用いてAPI設計から実装までを三日間で担当。API設計やMVCアーキテクチャ設計などの設計書を作成し、チームリーダーとしてAPI実装を行った。',
+  },
+  {
+    id: 'speee',
+    company: '株式会社Speee',
+    duration: '1週間以内',
+    summary: '3日間で不動産業界の課題を解決する新規プロダクト立案から、その実現性とプロダクト利点をプレゼン。チームリーダーとして新規プロダクト立案から実装までを想定した新規事業提案を牽引。',
   }
 ];
 
