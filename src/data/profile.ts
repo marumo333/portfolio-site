@@ -118,6 +118,12 @@ export const internships: Internship[] = [
     company: '株式会社Speee',
     duration: '1週間以内',
     summary: '3日間で不動産業界の課題を解決する新規プロダクト立案から、その実現性とプロダクト利点をプレゼン。チームリーダーとして新規プロダクト立案から実装までを想定した新規事業提案を牽引。',
+  },
+  {
+    id: 'dream-arts',
+    company: 'ドリーム・アーツ株式会社',
+    duration: '3ヶ月以上',
+    summary: '長期就業型インターン(2025年9月24日~)',
   }
 ];
 
